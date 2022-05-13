@@ -10,8 +10,6 @@ use Composer\Plugin\PluginInterface;
 class AppLockComposerPlugin implements PluginInterface, EventSubscriberInterface
 {
     private IOInterface $io;
-    private Composer $composer;
-
     private ?string $rootDir;
 
 
@@ -42,8 +40,6 @@ class AppLockComposerPlugin implements PluginInterface, EventSubscriberInterface
     public function activate(Composer $composer, IOInterface $io)
     {
         $this->io = $io;
-        $this->composer = $composer;
-
         $this->rootDir = dirname($composer->getConfig()->get('vendor-dir'));
     }
 
