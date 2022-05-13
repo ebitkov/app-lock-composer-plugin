@@ -18,5 +18,8 @@
   },
   "require-dev": {
     "composer/composer": "^2.3"
+  },
+  "extra": {
+    "class": "ebitkov\\AppLockComposerPlugin\\AppLockComposerPlugin"
   }
 }
