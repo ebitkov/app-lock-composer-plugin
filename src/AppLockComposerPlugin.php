@@ -3,10 +3,11 @@
 namespace ebitkov\AppLockComposerPlugin;
 
 use Composer\Composer;
+use Composer\EventDispatcher\EventSubscriberInterface;
 use Composer\IO\IOInterface;
 use Composer\Plugin\PluginInterface;
 
-class AppLockComposerPlugin implements PluginInterface
+class AppLockComposerPlugin implements PluginInterface, EventSubscriberInterface
 {
     private IOInterface $io;
     private Composer $composer;
