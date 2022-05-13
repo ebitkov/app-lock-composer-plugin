@@ -1,0 +1,15 @@
+{
+  "name": "ebitkov/app-lock-composer-plugin",
+  "type": "composer-plugin",
+  "authors": [
+    {
+      "name": "Emanuel Bitkov",
+      "email": "emanuel.bitkov@regenta-verlag.de"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "ebitkov\\AppLockComposerPlugin": "src/"
+    }
+  }
+}
