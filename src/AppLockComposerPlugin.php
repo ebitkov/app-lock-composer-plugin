@@ -44,7 +44,7 @@ class AppLockComposerPlugin implements PluginInterface, EventSubscriberInterface
         $this->io = $io;
         $this->composer = $composer;
 
-        $this->rootDir = dirname($_ENV['COMPOSER_VENDOR_DIR']);
+        $this->rootDir = dirname($composer->getConfig()->get('vendor-dir'));
     }
 
     public function deactivate(Composer $composer, IOInterface $io)
